@@ -1,0 +1,116 @@
+.container {
+  width: 35%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-style: 1px solid black;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+
+.dark {
+  background-color: rgb(50, 60, 50);
+}
+
+.dark:hover {
+  background-color: rgb(50, 80, 50);
+}
+
+.dark:active {
+  background-color: rgb(50, 100, 50);
+}
+
+.light {
+  background-color: rgb(200, 210, 200);
+}
+
+.light:hover {
+  background-color: rgb(180, 240, 180);
+}
+
+.light:active {
+  background-color: rgb(140, 200, 140);
+}
+
+.selected {
+  box-shadow: 0 0 10px 0 yellow inset;
+}
+
+.legal {
+  box-shadow: 0 0 25px 0 rgb(0, 255, 0) inset;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.rowIndex {
+  position: absolute;
+}
+
+.rowIndex_left {
+  left: -50%;
+}
+
+.rowIndex_right {
+  right: -50%;
+}
+
+.colIndex {
+  position: absolute;
+}
+
+.colIndex_top {
+  top: -50%;
+}
+
+.colIndex_bottom {
+  bottom: -50%;
+}
+
+.playerName_1 {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: blue;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.playerName_2 {
+  position: absolute;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: blue;
+  /* text-shadow: 0 0 5px black; */
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s ease-in-out;
+}
+
+.playerTurn {
+  background-color: yellow;
+}
