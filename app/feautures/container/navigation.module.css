@@ -13,7 +13,7 @@
   border: none;
   cursor: pointer;
   transition: 0.2s;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -30,8 +30,6 @@
 }
 
 .rotateButton {
-  position: relative;
-  right: 4%;
   background-color: rgba(0, 0, 0, 0.065);
   color: white;
   border-radius: 5px;

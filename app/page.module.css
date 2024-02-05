@@ -3,8 +3,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: start;
-  padding-left: 5rem;
+  justify-content: center;
   padding-top: 5rem;
   align-items: start;
   box-sizing: border-box;

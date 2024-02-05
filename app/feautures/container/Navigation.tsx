@@ -22,7 +22,7 @@ const Navigation = () => {
   return (
     <div className={bar}>
       <button disabled={page === 0} onClick={previous} className={button}>
-        {'<< previous'}
+        {'<<'}
       </button>
       <button
         onClick={() => dispatch(rotateBoard())}
@@ -35,7 +35,7 @@ const Navigation = () => {
         onClick={next}
         className={button}
       >
-        {'next >>'}
+        {'>>'}
       </button>
     </div>
   );
