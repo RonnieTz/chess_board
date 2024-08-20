@@ -35,7 +35,7 @@ export const pawnMoves = (
   const last = game[game.length > 2 ? game.length - 3 : game.length - 2];
   if (i === 3 || i === 4) {
     if (
-      last[i + direction * 2][j + 1].piece === 'pawn' &&
+      last[i + direction * 2][j + 1]?.piece === 'pawn' &&
       last[i + direction * 2][j + 1].color !== color &&
       cellIsEmpty(i + direction * 2, j + 1) &&
       cellIsEmpty(i + direction, j + 1) &&
@@ -50,7 +50,7 @@ export const pawnMoves = (
 
   if (i === 3 || i === 4) {
     if (
-      last[i + direction * 2][j - 1].piece === 'pawn' &&
+      last[i + direction * 2][j - 1]?.piece === 'pawn' &&
       last[i + direction * 2][j - 1].color !== color &&
       cellIsEmpty(i + direction * 2, j - 1) &&
       cellIsEmpty(i + direction, j - 1) &&

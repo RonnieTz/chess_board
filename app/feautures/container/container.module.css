@@ -8,6 +8,7 @@
   grid-template-rows: repeat(8, 1fr);
   transition: 0.2s ease-in-out;
   position: relative;
+  /* margin-top: 10rem; */
 }
 
 .line {
@@ -62,26 +63,28 @@
 
 .rowIndex {
   position: absolute;
+  font-size: 0.7rem;
 }
 
 .rowIndex_left {
-  left: -50%;
+  left: -15px;
 }
 
 .rowIndex_right {
-  right: -50%;
+  right: -15px;
 }
 
 .colIndex {
   position: absolute;
+  font-size: 0.7rem;
 }
 
 .colIndex_top {
-  top: -50%;
+  top: -20px;
 }
 
 .colIndex_bottom {
-  bottom: -50%;
+  bottom: -20px;
 }
 
 .playerName_1 {

@@ -8,12 +8,10 @@ import {
   removePieceSelection,
   movePiece,
   nextTurn,
-  rotateBoard,
   navigate,
   saveGame,
 } from '@/app/redux/gameSlice';
 import Piece from './Piece';
-import Navigation from './Navigation';
 const {
   container,
   box,
@@ -114,9 +112,6 @@ const GameContainer = () => {
             {row.map((square, j) => (
               <div
                 onClick={() => handleClick(i, j)}
-                onDragCapture={(e) => {
-                  console.log(e);
-                }}
                 className={`${box} ${(i + j) % 2 ? dark : light} ${
                   square.selected ? selected : null
                 } ${
